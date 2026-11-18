@@ -1,0 +1,9 @@
+{
+  "name": "valkiria",
+  "version": "1.0.0",
+  "description": "Audit ad spend, draft paused campaigns, review recommendations and SMM drafts across Google, Meta, TikTok and more via the Valkiria MCP server. Nothing goes live without owner approval in the dashboard.",
+  "author": { "name": "Valkiria", "url": "https://valkiria.pro" },
+  "homepage": "https://valkiria.pro/en/api-docs/",
+  "license": "MIT",
+  "keywords": ["ads", "google-ads", "meta-ads", "smm", "seo", "marketing", "mcp"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "valkiria",
+  "version": "1.0.0",
+  "description": "Valkiria ad, SMM, SEO and market analytics tools. Drafts only; the owner approves in the dashboard.",
+  "mcpServers": {
+    "valkiria": {
+      "httpUrl": "https://valkiria.pro/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "valkiria",
+  "version": "1.0.0",
+  "description": "Valkiria ad, SMM, SEO and market analytics tools. Drafts only; the owner approves in the dashboard.",
+  "author": "Valkiria",
+  "homepage": "https://valkiria.pro/en/api-docs/",
+  "license": "MIT",
+  "keywords": ["ads", "marketing", "mcp"],
+  "interface": {
+    "displayName": "Valkiria Ads Ops",
+    "shortDescription": "Audit ad spend, draft paused campaigns, review recommendations"
+  },
+  "mcpServers": {
+    "valkiria": {
+      "url": "https://valkiria.pro/mcp"
+    }
+  },
+  "systemPrompt": "Valkiria tools never go live: campaigns are drafts and recommendations are proposals the owner approves in the Valkiria dashboard. Start with get_started, reply in the user's language, keep money in native currency, never invent metrics (null = not measured). On PLAN_LIMIT_REACHED tell the user to open the pricing page in the dashboard."
+}

@@ -1,0 +1,17 @@
+{
+  "name": "valkiria",
+  "owner": { "name": "Valkiria", "url": "https://valkiria.pro" },
+  "metadata": {
+    "description": "Valkiria - paid growth, SMM, SEO and market analytics tools for AI assistants",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "valkiria",
+      "source": "./claude-code-plugin",
+      "description": "Audit ad spend, draft paused campaigns and review recommendations via the Valkiria MCP server",
+      "category": "marketing",
+      "tags": ["ads", "mcp", "marketing"]
+    }
+  ]
+}
