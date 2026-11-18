@@ -7,7 +7,7 @@ Connects Claude Code to the Valkiria remote MCP server (https://valkiria.pro/mcp
 ## Install
 
 ```bash
-claude plugin marketplace add notformal/valkiria-ai-plugins      # the GitHub repo that holds .claude-plugin/marketplace.json
+claude plugin marketplace add valkiria-pro/valkiria-ai-plugins      # the GitHub repo that holds .claude-plugin/marketplace.json
 claude plugin install valkiria@valkiria
 ```
 

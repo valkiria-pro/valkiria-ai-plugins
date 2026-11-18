@@ -16,16 +16,16 @@ You need a Valkiria account with at least one ad account connected.
 
 | Assistant | How |
 | --- | --- |
-| **Claude Code** (plugin with a skill) | `claude plugin marketplace add notformal/valkiria-ai-plugins` then `claude plugin install valkiria@valkiria` |
+| **Claude Code** (plugin with a skill) | `claude plugin marketplace add valkiria-pro/valkiria-ai-plugins` then `claude plugin install valkiria@valkiria` |
 | Claude Code (server only) | `claude mcp add --transport http valkiria https://valkiria.pro/mcp` |
 | **Claude.ai / Claude Desktop** | Settings -> Connectors -> Add custom connector -> `https://valkiria.pro/mcp` |
 | **ChatGPT** | Settings -> Connectors -> Create (developer mode) -> MCP server URL `https://valkiria.pro/mcp`, OAuth |
-| **Gemini CLI** | `gemini extensions install https://github.com/notformal/valkiria-ai-plugins` |
+| **Gemini CLI** | `gemini extensions install https://github.com/valkiria-pro/valkiria-ai-plugins` |
 | **Codex CLI** | `codex mcp add valkiria --url https://valkiria.pro/mcp` then `codex mcp login valkiria` |
 | **Cursor** | see [docs/cursor.md](docs/cursor.md), or `.cursor/mcp.json`: `{"mcpServers":{"valkiria":{"url":"https://valkiria.pro/mcp"}}}` |
 | **VS Code** | **MCP: Add Server** -> HTTP -> `https://valkiria.pro/mcp` |
 | **Cline** | see [llms-install.md](llms-install.md) |
-| **Kimi Code CLI** | `/plugins install https://github.com/notformal/valkiria-ai-plugins` then `/reload` |
+| **Kimi Code CLI** | `/plugins install https://github.com/valkiria-pro/valkiria-ai-plugins` then `/reload` |
 | Windsurf | `~/.codeium/windsurf/mcp_config.json`: `{"mcpServers":{"valkiria":{"serverUrl":"https://valkiria.pro/mcp"}}}` |
 | Any other MCP client | Streamable HTTP, URL `https://valkiria.pro/mcp`, OAuth discovery at `https://valkiria.pro/.well-known/oauth-protected-resource` |
 
