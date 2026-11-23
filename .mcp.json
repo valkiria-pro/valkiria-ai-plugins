@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "valkiria": {
+      "type": "http",
+      "url": "https://valkiria.pro/mcp"
+    }
+  }
+}
