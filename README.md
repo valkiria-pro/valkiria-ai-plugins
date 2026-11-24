@@ -23,10 +23,17 @@ You need a Valkiria account with at least one ad account connected.
 | **Gemini CLI** | `gemini extensions install https://github.com/valkiria-pro/valkiria-ai-plugins` |
 | **Codex CLI** | `codex mcp add valkiria --url https://valkiria.pro/mcp` then `codex mcp login valkiria` |
 | **Cursor** | see [docs/cursor.md](docs/cursor.md), or `.cursor/mcp.json`: `{"mcpServers":{"valkiria":{"url":"https://valkiria.pro/mcp"}}}` |
-| **VS Code** | **MCP: Add Server** -> HTTP -> `https://valkiria.pro/mcp` |
-| **Cline** | see [llms-install.md](llms-install.md) |
+| **VS Code / GitHub Copilot** | **MCP: Add Server** -> HTTP -> `https://valkiria.pro/mcp`, or `.vscode/mcp.json`: `{"servers":{"valkiria":{"type":"http","url":"https://valkiria.pro/mcp"}}}` |
+| **Cline** | MCP Servers -> Configure: `{"mcpServers":{"valkiria":{"type":"streamableHttp","url":"https://valkiria.pro/mcp"}}}` (agents: [llms-install.md](llms-install.md)) |
 | **Kimi Code CLI** | `/plugins install https://github.com/valkiria-pro/valkiria-ai-plugins` then `/reload` |
 | Windsurf | `~/.codeium/windsurf/mcp_config.json`: `{"mcpServers":{"valkiria":{"serverUrl":"https://valkiria.pro/mcp"}}}` |
+| Zed | `settings.json`: `{"context_servers":{"valkiria":{"url":"https://valkiria.pro/mcp"}}}` - Zed runs the OAuth sign-in itself |
+| Goose | `goose configure` -> Add Extension -> Remote Extension (Streamable HTTP) -> `https://valkiria.pro/mcp`, or in `~/.config/goose/config.yaml`: `extensions: {valkiria: {type: streamable_http, name: valkiria, uri: "https://valkiria.pro/mcp", enabled: true, timeout: 300}}` |
+| LM Studio (0.3.17+) | Program -> Install -> Edit `mcp.json`: `{"mcpServers":{"valkiria":{"url":"https://valkiria.pro/mcp"}}}` |
+| Continue | `.continue/mcpServers/valkiria.yaml` with `type: streamable-http`, `url: https://valkiria.pro/mcp` and an `Authorization: Bearer vk_live_...` header (developer API key) |
+| OpenClaw | `openclaw mcp add valkiria --url https://valkiria.pro/mcp --transport streamable-http` then `openclaw mcp login valkiria` |
+| Perplexity (Mac app, Pro/Max) | Settings -> Connectors -> Add custom remote connector -> `https://valkiria.pro/mcp`, Streamable HTTP, OAuth |
+| Manus | Connectors -> Add custom MCP -> by URL -> `https://valkiria.pro/mcp` |
 | Any other MCP client | Streamable HTTP, URL `https://valkiria.pro/mcp`, OAuth discovery at `https://valkiria.pro/.well-known/oauth-protected-resource` |
 
 ## First prompt to try
