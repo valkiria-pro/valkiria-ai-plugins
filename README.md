@@ -53,3 +53,6 @@ Documentation: https://valkiria.pro/en/api-docs/ - Privacy: https://valkiria.pro
 Terms: https://valkiria.pro/en/terms/ - Support: support@valkiria.pro
 
 Listed in the official MCP Registry as `pro.valkiria/valkiria`.
+
+[![Valkiria MCP connector](https://glama.ai/mcp/connectors/pro.valkiria/valkiria/badges/score.svg)](https://glama.ai/mcp/connectors/pro.valkiria/valkiria)
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/valkiria-pro/valkiria-ai-plugins)
