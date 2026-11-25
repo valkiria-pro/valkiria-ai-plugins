@@ -41,6 +41,22 @@ You need a Valkiria account with at least one ad account connected.
 
 > Call get_started, then audit the spend of my ad accounts for the last 30 days and show the top 3 money leaks in native currency.
 
+## For developers
+
+- **Tool reference** - every tool with its parameters, required scope and a ready `curl` and MCP call:
+  https://valkiria.pro/en/api-docs/tools/ (plain text for models: https://valkiria.pro/llms-tools.txt). It is rebuilt
+  from the server's tool registry at each release.
+- **REST mirror** - every tool is also an HTTP endpoint: `GET https://valkiria.pro/api/v1/tools` lists them,
+  `POST https://valkiria.pro/api/v1/tools/{name}` calls one with the arguments as the JSON body. Same Bearer
+  credential (OAuth access token or `vk_live_` API key), same scopes and approval flow as the MCP endpoint.
+- **Scopes** - OAuth: `read` (everything that only reads) and `propose` (drafts, AI generation, change proposals
+  that wait for the owner's approval). API keys carry tool scopes such as `campaigns:read`, `analytics:read`,
+  `campaigns:write`, `ai:generate`.
+- **Limits** - 100 requests a minute per credential. Reading is free (fair use: 2000 read calls a day); changes and
+  AI generations spend the plan's monthly allowance.
+- **Guides** - authentication, limits, the approval flow with a worked example and the error codes:
+  https://valkiria.pro/en/api-docs/ (13 languages).
+
 ## What is in this repository
 
 - `.claude-plugin/marketplace.json`, `claude-code-plugin/` - Claude Code marketplace and plugin (MCP server + `valkiria-ads-ops` skill)
