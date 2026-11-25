@@ -27,6 +27,7 @@ You need a Valkiria account with at least one ad account connected.
 | **Cline** | MCP Servers -> Configure: `{"mcpServers":{"valkiria":{"type":"streamableHttp","url":"https://valkiria.pro/mcp"}}}` (agents: [llms-install.md](llms-install.md)) |
 | **Kimi Code CLI** | `/plugins install https://github.com/valkiria-pro/valkiria-ai-plugins` then `/reload` |
 | Windsurf | `~/.codeium/windsurf/mcp_config.json`: `{"mcpServers":{"valkiria":{"serverUrl":"https://valkiria.pro/mcp"}}}` |
+| Kiro | [Add to Kiro](https://kiro.dev/launch/mcp/add?name=valkiria&config=%7B%22url%22%3A%22https%3A%2F%2Fvalkiria.pro%2Fmcp%22%7D), or `~/.kiro/settings/mcp.json`: `{"mcpServers":{"valkiria":{"url":"https://valkiria.pro/mcp"}}}` |
 | Zed | `settings.json`: `{"context_servers":{"valkiria":{"url":"https://valkiria.pro/mcp"}}}` - Zed runs the OAuth sign-in itself |
 | Goose | `goose configure` -> Add Extension -> Remote Extension (Streamable HTTP) -> `https://valkiria.pro/mcp`, or in `~/.config/goose/config.yaml`: `extensions: {valkiria: {type: streamable_http, name: valkiria, uri: "https://valkiria.pro/mcp", enabled: true, timeout: 300}}` |
 | LM Studio (0.3.17+) | Program -> Install -> Edit `mcp.json`: `{"mcpServers":{"valkiria":{"url":"https://valkiria.pro/mcp"}}}` |
